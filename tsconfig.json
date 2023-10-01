@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": false,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "lib": ["ES2022"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ES2022",
+    "allowJs": true,
+    "typeRoots": ["./node_modules/@types"],
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "paths": {
+      "src/*": ["src/*"]
+    }
+  },
+  "include": ["./src/**/*", "./api/index.ts", "public"],
+  "exclude": ["node_modules"],
+  "compileOnSave": false,
+  "moduleResolution": ["node"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
